@@ -1,0 +1,277 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #ffffff;
+}
+/* SECCION NAVEGADOR*/
+header {
+    background: #1c1c1c;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+   
+}
+
+.imgLogo{
+    /*padding-right: 15rem;*/
+    font-size: 1.25rem;
+    text-decoration: none;
+    align-items: center;
+}
+
+.container {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.link1{
+    padding-left: 20rem;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    
+}
+.ul1{
+    list-style: none;
+    display: flex;
+    
+}
+
+.listas1{
+    margin: 18px;
+
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn {
+    background: #a30505;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;   
+}
+
+
+/*seccion principal*/
+
+.parte_principal{
+    padding-top: 35px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.hero {
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.5),rgb(0 0 0 /.5)), url('../assets/pochoclos2.jpg');
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+    
+.parrafoPrincipal {
+    position: relative;
+    text-align: center;
+}
+
+.parrafoPrincipal h2 {
+    font-size: 3rem;
+
+}
+/*seccion tarjetas*/
+
+.carousel, .grid, .nuevo-lanzamiento {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+h2{
+text-align: center;
+padding-top: 15px;
+}
+
+.peliculas_tarjetas, .series-card, .estrenos-card {
+    background: #2c2c2c;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 30%;
+    text-align: center;
+}
+
+.peliculas_tarjetas img, .series-card img, .estrenos-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+#peliculas{
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+.peliculas_tarjetas:hover,.series-card:hover,.estrenos-card:hover {
+    transform: scale(1.1);
+}
+.tituloH3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 2rem;
+   
+
+}
+.btn_tarjetas{
+   align-items: end;
+
+}
+/* SECCION FORMULARIO*/
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+/* SECCION FOOTER*/
+footer {
+    background: #1c1c1c;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+footer a{
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px; 
+    transition: color 0.3s;
+}
+footer a:hover{
+    color:#e50914;
+}
+.social-media {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.social-media h3 {
+    color: #ffffff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 15px; 
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #e50914; /* Cambia el color al pasar el mouse */
+}
+.iconoFooter{
+    width: 30px;
+    padding-left: 5px;
+}
+.iconotwiter{
+ width: 35px;
+}
+/*----------MEDIA QUERY--------------*/
+@media screen and (max-width: 900px){
+    /*CONTENIDO HEADER*/
+
+    header{
+        width: 100;
+    }
+    .link1{
+        display: inline-block;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+    .btn {
+        background: #a30505;
+        color: #ffffff;
+        padding: 5px 10px;
+        text-decoration: none;
+        border-radius: 5px;
+        
+        
+    }
+    .parte_principal{
+        justify-content: center;
+    }
+    .parrafoPrincipal{
+        line-height: 1.5rem;
+    }
+    .hero{
+        width: 100%;
+        text-align: center;
+      padding-right: 0;
+    }
+    .parrafoPrincipal h2 {
+        font-size: 1.5rem;
+
+    }
+    .peliculas_tarjetas, .series-card,.estrenos-card{
+
+    width: 80%;
+    margin-bottom: 1rem;
+    box-shadow: -4px -4px 30px 6px rgba(27, 27, 27, 0.64);
+    -webkit-box-shadow: -4px -4px 30px 6px rgba(27,27,27,0.64);
+    -moz-box-shadow:-4px -4px 30px 6px rgba(27,27,27,27.64);
+   }
+   .tituloH3{
+    padding-top: 10px;
+   }
+    
+   footer {
+    align-items: center;
+    justify-content: space-between; 
+    padding: 15px;
+}
+footer p{
+    margin: 2px;
+    font-size: 15px;
+}
+ footer a{
+    font-size: 15px;
+
+    
+ }
+ .menuHam{
+    background: #e50914;
+ }
+
+}
